@@ -9,5 +9,9 @@
         var list = component.get("v.leadList")
         list.push({Name : leadName, Surname: leadSurname});
         component.set("v.leadList", list );
+    },
+    clearList : function(component, event, helper) {
+        component.set("v.leadList", []);
     }
+    
 })

@@ -3,8 +3,22 @@
 	<aura:attribute name="leadName" type="String" />
 	<aura:attribute name="leadList" type="Object[]" />
 	<span class="slds-text-heading_large">ultimo lead insertado {!v.leadName}</span>
-	<aura:iteration items="{!v.leadList}" var="lead">
-		<div class="slds-text-heading_small">{!lead.Name}</div>
-		<div class="slds-text-heading_small">{!lead.Surname}</div>
+	<table>
+		<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Apellido</th>
+		</tr>
+	</thead>
+	<tbody>
+	<aura:iteration items="{!v.leadList}" var="lead" indexVar="index">
+		<tr>
+			<td>{!index}</td>
+			<td>{!lead.Name}</td>
+			<td>{!lead.Surname}</td>
+		</tr>
 	</aura:iteration>
+	</tbody>
+</table>
+<input type="button" value="clearList" onclick="{!c.clearList}"/>
 </aura:component>	
