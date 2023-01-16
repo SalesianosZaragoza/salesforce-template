@@ -3,6 +3,8 @@
 	<form>
 		<!-- add a input text -->
 		<input type="text" name="name" placeholder="Name" aura:id="name" />
+		<input type="text" name="surname" placeholder="SurName" aura:id="surname" />
+
 		<input type="button" value="clickme" onclick="{!c.createLead}">Create</input>
 	</form>
 </aura:component>	

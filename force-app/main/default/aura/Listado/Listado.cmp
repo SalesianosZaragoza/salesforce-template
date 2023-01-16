@@ -1,5 +1,10 @@
 <aura:component>
 	<aura:handler event="c:saveLead" action="{!c.showLead}"/>
 	<aura:attribute name="leadName" type="String" />
-	<span class="slds-text-heading_large">Lead emviado {!v.leadName}</span>
+	<aura:attribute name="leadList" type="Object[]" />
+	<span class="slds-text-heading_large">ultimo lead insertado {!v.leadName}</span>
+	<aura:iteration items="{!v.leadList}" var="lead">
+		<div class="slds-text-heading_small">{!lead.Name}</div>
+		<div class="slds-text-heading_small">{!lead.Surname}</div>
+	</aura:iteration>
 </aura:component>	
