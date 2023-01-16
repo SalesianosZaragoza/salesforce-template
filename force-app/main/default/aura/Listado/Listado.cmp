@@ -1,0 +1,5 @@
+<aura:component>
+	<aura:handler event="c:saveLead" action="{!c.showLead}"/>
+	<aura:attribute name="leadName" type="String" />
+	<span class="slds-text-heading_large">Lead emviado {!v.leadName}</span>
+</aura:component>	

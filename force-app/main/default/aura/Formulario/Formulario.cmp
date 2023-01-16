@@ -1,0 +1,8 @@
+<aura:component>
+<!-- add a html form -->
+	<form>
+		<!-- add a input text -->
+		<input type="text" name="name" placeholder="Name" aura:id="name" />
+		<input type="button" value="clickme" onclick="{!c.createLead}">Create</input>
+	</form>
+</aura:component>	
