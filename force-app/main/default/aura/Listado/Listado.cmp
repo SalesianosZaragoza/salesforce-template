@@ -16,6 +16,7 @@
 			<td>{!index}</td>
 			<td>{!lead.Name}</td>
 			<td>{!lead.Surname}</td>
+			<td><input type="button" data-value="{!index}" onclick="{!c.clearItem}"/></td>
 		</tr>
 	</aura:iteration>
 	</tbody>

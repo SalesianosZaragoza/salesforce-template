@@ -12,6 +12,16 @@
     },
     clearList : function(component, event, helper) {
         component.set("v.leadList", []);
+    },
+    clearItem : function(component, event, helper) {
+        var ctarget = event.currentTarget;
+        var index = ctarget.dataset.value;
+        console.log(index);
+        if(index){
+            var list = component.get("v.leadList");
+            list.splice(index, 1);
+            component.set("v.leadList", list);
+        }
     }
     
 })
