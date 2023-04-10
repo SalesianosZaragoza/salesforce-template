@@ -39,6 +39,6 @@
     ]
   },
   "dependencies": {
-    "sfdx-cli": "^7.182.1"
+    "sfdx-cli": "^7.197.2"
   }
 }
